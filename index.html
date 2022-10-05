@@ -42,21 +42,24 @@
         return itemHtml
       }
       
+     
     </script>
-    
 <style>
+    
     .button_click{
         margin-left:44%;
         margin-top:100px;
-        position:absolute;
+        position:auto;
         background-color: #80bfff; 
-        border: none;
-        color: #80bfff;
-        padding: 15px 32px;
+        border: 30px;
+        color: #000000;
+        padding: 50px 50px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 16px;
+        font-size: xx-large
+        
+
       }
 
       .item {
@@ -68,20 +71,22 @@
         background: #80bfff;
         text-align:center;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: xx-large;
       }
 
       body {
         background:#000000;
       }
      
+      
 </style>
 
   <body>
         <div class="itemContainer">
           <p class="item"><i> This tool was designed to help you learn Salesforce! Just click the button for a random flashcard!</i><br><b> -Gage Staruch</b></p>
     </div>
-        <div class="button_click" id="button_click">
-      <button onclick="initialize_generate()">
+        <div id="div1">
+      <button class="button_click" onclick="initialize_generate()">
        Next
       </button>
     </div>
