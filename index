@@ -1,0 +1,87 @@
+<html>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"> </script>
+  
+<script>
+    var salesforcetidbit = [{
+        item: "Validation rules verify that the data a user enters in a record meets the standards you specify before a user can save the record. A validation rule can contain a formula or expression that evaluates the data in one or more fields and returns a value of “True” or “False”. Validation rules also include an error message to display to the user when the rule returns a value of “True” due to an invalid value.",
+      }, {
+        item: "Fields represent the data stored in the columns of a relational database. It can also hold any valuable information that is required for a specific object.",
+      }, {
+        item: "Trailhead is an online learning platform to learn in-demand Salesforce and business skills",
+      }, {
+        item: "Record types let you offer different business processes, picklist values, and page layouts to different users. You might create record types to differentiate your regular sales deals from your professional services engagements, offering different picklist values for each. Or you might display different page layouts for your customer support cases versus your billing cases.",
+      }, {
+        item: "Custom tabs let you display custom object data or other web content in Salesforce. When you add a custom tab to an app in Salesforce Classic, it appears as a tab. When you add a custom tab to an app in Lightning Experience, it appears as an item in the app’s navigation bar and in the App Launcher.",
+      }, {
+        item: "Salesforce lets you personalize your object model with features like custom fields, page layouts, and validation rules. Depending on which experience of Salesforce you have enabled, these customizations are located in different areas of Setup.",
+      }, {
+        item: "You can change the name of almost any object, field, or tab in Salesforce. This simple adjustment lets you continue using the terminology your users already know and helps them transition to using Salesforce. However, Salesforce Help and most pages in Setup always display the original names for standard objects, fields, and tabs.",
+      }, {
+        item: "Use field-level security to control user access to fields. Use page layouts to control the layout and organization of detail and edit pages in Salesforce, the Self-Service Portal, and the Salesforce Customer Portal.",
+      }, {
+        item: "Custom objects allow you to store information that’s unique to an organization.",
+      }, {
+        item: "You can customize standard and custom fields to tailor an org to it's own unique requirements.",
+      }, ];
+      
+      function initialize_generate() {
+        var sweetspot = Math.floor((Math.random() * salesforcetidbit.length));
+        for (var i = 0; i <= salesforcetidbit.length; i++) {
+      
+          if (i === sweetspot) {
+            var itemHtml = generate_html(salesforcetidbit[i]);
+            $(".item").empty().append(itemHtml);
+            //console.log("test");
+          }
+        }
+      }
+      
+      function generate_html(itemObj) {
+      
+        var itemHtml = "<i> " + itemObj["item"];
+        return itemHtml
+      }
+      
+    </script>
+    
+<style>
+    .button_click{
+        margin-left:44%;
+        margin-top:100px;
+        position:absolute;
+        background-color: #80bfff; 
+        border: none;
+        color: #80bfff;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+
+      .item {
+        max-width:auto;
+        height:auto;
+        margin-left:auto;
+        border-radius:auto;
+        padding:100px;
+        background: #80bfff;
+        text-align:center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background:#000000;
+      }
+     
+</style>
+
+  <body>
+        <div class="itemContainer">
+          <p class="item"><i> This tool was designed to help you learn Salesforce! Just click the button for a random flashcard!</i><br><b> -Gage Staruch</b></p>
+    </div>
+        <div class="button_click" id="button_click">
+      <button onclick="initialize_generate()">
+       Next
+      </button>
+    </div>
