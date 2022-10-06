@@ -19,10 +19,50 @@
       }, {
         item: "Use field-level security to control user access to fields. Use page layouts to control the layout and organization of detail and edit pages in Salesforce, the Self-Service Portal, and the Salesforce Customer Portal.",
       }, {
-        item: "Custom objects allow you to store information that’s unique to an organization.",
+        item: "CRM is short for Customer Relationship Management",
+      }, {
+        item: "Fields can be set to not-visible or read-only based on the profile.",
+      }, {
+        item: "One way to grant access to a specific field is with a permission set.",
       }, {
         item: "You can customize standard and custom fields to tailor an org to it's own unique requirements.",
-      }, ];
+      },{
+        item: "You can customize each of the standard tabs and types of records, including adding custom fields and setting page layouts. You can also customize search, tagging, and user interface options for your org. In addition, every Contact Manager, Group, Professional, Enterprise, Unlimited, and Performance Edition user can customize various personal display options.",
+      },{
+        item: "The quick access menu offers handy shortcuts to customization features.",
+      },{
+        item: "With the enhanced page layout editor, you can tailor record page layouts to the needs of your users. Add, remove, or reorder actions, buttons, fields, and sections on a record’s detail page.",
+      },{
+        item: "Use a validation rule for preventing users from saving a record when specific requirements are met",
+      },{
+        item: "Dashboards are a collection of Salesforce Reports",
+      },{
+        item: "List Views are great for organizing records that a user would work with day to day.",
+      },{
+        item: "Your company settings are the collection of information about your organization.",
+      },{
+        item: "You must enable multiple currencies when adding additional currencies to a Salesforce org",
+      },{
+        item: "Flows are used for automating business processes.",
+      },{
+        item: "Profiles help to control object privileges such as CRED (Create, Read, Edit, Delete). They also contain system permissions that a user can carry out such as exporting data. Roles on the other hand help with sharing records across an organization.",
+      },{
+        item: "With List Views you can quickly see particular segments of your data.",
+      },{
+        item: "Salesforce Reports are used to generate data and display the data in the form of Rows and Columns with rule criteria.",
+      },{
+        item: "Salesforce allows the system to be accessed by customers, through a customer community (Site Experience) or by partners by using a partner community.",
+      },{
+        item: "Tabs are displayed at the top of the Salesforce page and give access to the various areas of the application such as Accounts, Contacts and any custom objects that have been defined.",
+      },{
+        item: "A record in Salesforce is a group of fields storing information about a certain area, such as Accounts or Contacts. A Detail record is the saved record and any related lists.",
+      },{
+        item: "A related list is a list of records that are related to a detail record and are shown on the detail record page.",
+      },{
+        item: "A profile controls what a user can do in Salesforce. Every user is assigned a profile.",
+      },{
+        item: "A role is used for enhancing data visibility (e.g a manager can see the records of the team). Assigning a role to a user is optional.",
+      },];
       
       function initialize_generate() {
         var sweetspot = Math.floor((Math.random() * salesforcetidbit.length));
@@ -105,7 +145,7 @@
   <body>
     <h1 class="Header">Salesforce Administrator Study Tool</h1>
         <div class="itemContainer">
-          <p class="item"><i> This tool was designed to help you learn Salesforce! Just click the button for a random piece of Admin information!</i><br><br><b>Designed by @Gagestaruch</b></p>
+          <p class="item"><i> This tool was designed to help you learn Salesforce! Just click the button for a random piece of Admin information!</i><br><br><b> Designed by @Gagestaruch</b></p>
     </div>
         <div id="div1">
       <button class="button_click" onclick="initialize_generate()">
