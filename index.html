@@ -47,46 +47,74 @@
 <style>
     
     .button_click{
-        margin-left:44%;
-        margin-top:100px;
-        position:auto;
-        background-color: #80bfff; 
-        border: 30px;
+        margin-left: 40%;
+        margin-right: 40%;
+        text-align: center;
+        position: center;
+        background-color: #6cb5ff; 
         color: #000000;
-        padding: 50px 50px;
+        padding: 7px 70px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: xx-large
-        
+        font-size: 30px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+      }
 
+  
+      .button_click:hover {background-color: #289af7}
+      
+      .button_click:active {
+        background-color: #084f8a;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
       }
 
       .item {
         max-width:auto;
         height:auto;
-        margin-left:auto;
-        border-radius:auto;
-        padding:100px;
-        background: #80bfff;
+        margin-left:10px;
+        border-radius:15px;
+        padding:25px;
         text-align:center;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: xx-large;
+        font-size: 20px;
       }
 
       body {
-        background:#000000;
+        background:#d4d4d4;
+      }
+      .Header{
+        max-width:auto;
+        height:auto;
+        margin-left:10px;
+        border-radius:15px;
+        padding:25px;
+        text-align:center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 25px;        
       }
      
       
 </style>
 
   <body>
+    <h1 class="Header">Salesforce Administrator Study Tool</h1>
         <div class="itemContainer">
-          <p class="item"><i> This tool was designed to help you learn Salesforce! Just click the button for a random flashcard!</i><br><b> -Gage Staruch</b></p>
+          <p class="item"><i> This tool was designed to help you learn Salesforce! Just click the button for a random piece of Admin information!</i><br><br><b>Designed by @Gagestaruch</b></p>
     </div>
         <div id="div1">
       <button class="button_click" onclick="initialize_generate()">
        Next
       </button>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
     </div>
